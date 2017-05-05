@@ -23,5 +23,5 @@ public class PurchaseHistory {
 	
 	private ArrayList<String> seats;
 	
-	private double TotalCost;
+	private double totalCost;
 }
