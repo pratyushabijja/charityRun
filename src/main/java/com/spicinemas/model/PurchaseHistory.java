@@ -17,10 +17,8 @@ import lombok.ToString;
 @Setter
 public class PurchaseHistory {
 	
-	private Screen screen;
-	
-	private String date;
-	
+	private ShowTime showTime;
+		
 	private ArrayList<String> seats;
 	
 	private double totalCost;
