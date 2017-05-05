@@ -1,5 +1,7 @@
 package com.spicinemas.model;
 
+import java.util.HashMap;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AccessLevel;
@@ -13,22 +15,12 @@ import lombok.ToString;
 @ToString
 @Getter
 @Setter
-public class User {
+public class Preferences {
+	private String preferredDayInWeek;
 	
-	private String accessToken;
+	private String preferredSlot;
 	
-	private String name;
+	private String preferredSeats;
 	
-	private String email;
-	
-	private String phoneNumber;
-	
-	private String Age;
-	
-	private String location;
-	
-	private Preferences preferences;
-	
-	private PurchaseHistory purchaseHistory;
-	
+	HashMap<String,String> otherPreferences = new HashMap<String,String>(); 
 }

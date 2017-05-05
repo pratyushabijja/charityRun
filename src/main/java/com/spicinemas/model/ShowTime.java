@@ -13,22 +13,15 @@ import lombok.ToString;
 @ToString
 @Getter
 @Setter
-public class User {
+public class ShowTime {
+	private String MovieId;
 	
-	private String accessToken;
+	private String ScreenId;
 	
-	private String name;
+	private String TheatreId;
 	
-	private String email;
+	private String slots;
 	
-	private String phoneNumber;
-	
-	private String Age;
-	
-	private String location;
-	
-	private Preferences preferences;
-	
-	private PurchaseHistory purchaseHistory;
+	private String date;
 	
 }

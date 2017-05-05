@@ -13,22 +13,13 @@ import lombok.ToString;
 @ToString
 @Getter
 @Setter
-public class User {
+public class Screen {
 	
-	private String accessToken;
+	final int MAX_ROWS = 100;
+	final int MAX_COLUMNS = 100;
 	
-	private String name;
-	
-	private String email;
-	
-	private String phoneNumber;
-	
-	private String Age;
-	
-	private String location;
-	
-	private Preferences preferences;
-	
-	private PurchaseHistory purchaseHistory;
+	private String Id;
+	private String Name;
+	private int[][] seat_layout = new int[MAX_ROWS][MAX_COLUMNS];
 	
 }

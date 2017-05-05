@@ -1,5 +1,7 @@
 package com.spicinemas.model;
 
+import java.util.ArrayList;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AccessLevel;
@@ -13,22 +15,13 @@ import lombok.ToString;
 @ToString
 @Getter
 @Setter
-public class User {
+public class Theatre {
 	
-	private String accessToken;
+	private String Id;
 	
-	private String name;
+	private String Name;
 	
-	private String email;
+	private String Location;
 	
-	private String phoneNumber;
-	
-	private String Age;
-	
-	private String location;
-	
-	private Preferences preferences;
-	
-	private PurchaseHistory purchaseHistory;
-	
+	private ArrayList<Screen> Screens;
 }
