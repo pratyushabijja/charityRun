@@ -17,11 +17,11 @@ import lombok.ToString;
 @Setter
 public class Theatre {
 	
-	private String Id;
+	private String ID;
 	
-	private String Name;
+	private String name;
 	
-	private String Location;
+	private String location;
 	
-	private ArrayList<Screen> Screens;
+	private ArrayList<Screen> screens;
 }

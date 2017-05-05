@@ -14,11 +14,11 @@ import lombok.ToString;
 @Getter
 @Setter
 public class ShowTime {
-	private String MovieId;
+	private String movieId;
 	
-	private String ScreenId;
+	private String screenId;
 	
-	private String TheatreId;
+	private String theatreId;
 	
 	private String slots;
 	

@@ -18,7 +18,7 @@ public class Screen {
 	final int MAX_ROWS = 100;
 	final int MAX_COLUMNS = 100;
 	
-	private String Id;
+	private String ID;
 	private String Name;
 	private int[][] seat_layout = new int[MAX_ROWS][MAX_COLUMNS];
 	

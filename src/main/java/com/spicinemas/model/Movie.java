@@ -19,10 +19,10 @@ public class Movie {
 	
 	private String ID;
 	
-	private String Title;
+	private String title;
 	
-	private String ImdbId;
+	private String imdbId;
 	
-	private ArrayList<Scenes> SceneEmotions;
+	private ArrayList<Scenes> sceneEmotions;
 	
 }
