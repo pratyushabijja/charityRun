@@ -10,11 +10,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Document(collection="userinfo")
-@AllArgsConstructor(access=AccessLevel.PUBLIC)
-@ToString
-@Getter
-@Setter
 public class PurchaseHistory {
 	
 	private ShowTime showTime;
@@ -22,4 +17,28 @@ public class PurchaseHistory {
 	private ArrayList<String> seats;
 	
 	private double totalCost;
+
+	public ShowTime getShowTime() {
+		return showTime;
+	}
+
+	public void setShowTime(ShowTime showTime) {
+		this.showTime = showTime;
+	}
+
+	public ArrayList<String> getSeats() {
+		return seats;
+	}
+
+	public void setSeats(ArrayList<String> seats) {
+		this.seats = seats;
+	}
+
+	public double getTotalCost() {
+		return totalCost;
+	}
+
+	public void setTotalCost(double totalCost) {
+		this.totalCost = totalCost;
+	}
 }

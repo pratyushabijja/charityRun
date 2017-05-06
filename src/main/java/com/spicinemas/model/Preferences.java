@@ -10,11 +10,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Document(collection="userinfo")
-@AllArgsConstructor(access=AccessLevel.PUBLIC)
-@ToString
-@Getter
-@Setter
 public class Preferences {
 	private String preferredDayInWeek;
 	
@@ -22,5 +17,37 @@ public class Preferences {
 	
 	private String preferredSeats;
 	
-	HashMap<String,String> otherPreferences = new HashMap<String,String>(); 
+	HashMap<String,String> otherPreferences = new HashMap<String,String>();
+
+	public String getPreferredDayInWeek() {
+		return preferredDayInWeek;
+	}
+
+	public void setPreferredDayInWeek(String preferredDayInWeek) {
+		this.preferredDayInWeek = preferredDayInWeek;
+	}
+
+	public String getPreferredSlot() {
+		return preferredSlot;
+	}
+
+	public void setPreferredSlot(String preferredSlot) {
+		this.preferredSlot = preferredSlot;
+	}
+
+	public String getPreferredSeats() {
+		return preferredSeats;
+	}
+
+	public void setPreferredSeats(String preferredSeats) {
+		this.preferredSeats = preferredSeats;
+	}
+
+	public HashMap<String, String> getOtherPreferences() {
+		return otherPreferences;
+	}
+
+	public void setOtherPreferences(HashMap<String, String> otherPreferences) {
+		this.otherPreferences = otherPreferences;
+	} 
 }

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.spicinemas.model.User;
 import com.spicinemas.repository.UserRepository;
 
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
@@ -23,7 +24,7 @@ public class SignUpController implements BaseController {
 	@PostMapping(value = "/signup", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> signup(@RequestBody User user) {
 
-		log.info("Requesting resource /v1/api/signup");
+		//log.info("Requesting resource /v1/api/signup");
 		
 		try {
 			userRepo.save(user);
