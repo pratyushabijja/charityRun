@@ -14,7 +14,7 @@ public class GreetingController implements BaseController{
 	@GetMapping(value = "/greeting")
 	public ResponseEntity<String> greeting() {
 		
-		log.info("Requesting resource /v1/api/greeting");
+		//log.info("Requesting resource /v1/api/greeting");
 
 		return new ResponseEntity<String>("Hello World", HttpStatus.ACCEPTED);
 	}
