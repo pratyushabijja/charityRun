@@ -36,6 +36,7 @@ public class Movie {
 	
 	private String imdbId;
 	
+	private String releaseDate;
 
 	public List<String> getGenre() {
 		return genre;
