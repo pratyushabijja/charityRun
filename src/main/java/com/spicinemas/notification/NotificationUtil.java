@@ -18,11 +18,8 @@ public class NotificationUtil {
 	
 	@Value("${notification.endpoint}")
 	String firebaseNotificationEndpoint;
-	
-	@Value("${device.token}")
-	String firebaseDeviceToken;
 
-	public void sendDummyNotification() throws Exception{
+	public void sendDummyNotification(String firebaseDeviceToken, String movieId) throws Exception{
 		
 		URL url = new URL(firebaseNotificationEndpoint);
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -40,7 +37,7 @@ public class NotificationUtil {
 		json.put("to", firebaseDeviceToken.trim());
 		JSONObject info = new JSONObject();
 		info.put("title", "Movie Bonanza"); 
-		info.put("body", "Book Baahubali: The Conclusion's tickets now at https://spicine.ma/akJA394KAmz/baahubali2"); // Notification
+		info.put("body", "Book Baahubali: The Conclusion's tickets now at https://spicine.ma/baahubali2?uid=m1"); // Notification
 		// body
 		json.put("notification", info);
 		try
