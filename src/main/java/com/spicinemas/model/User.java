@@ -1,5 +1,6 @@
 package com.spicinemas.model;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AccessLevel;
@@ -14,6 +15,9 @@ import lombok.ToString;
 @Getter
 @Setter
 public class User {
+	
+	@Id
+	private String id;
 	
 	private String accessToken;
 	
@@ -97,4 +101,11 @@ public class User {
 		this.purchaseHistory = purchaseHistory;
 	}
 	
+	public void setFireBaseToken(String fireBaseToken){
+		this.fireBaseToken = fireBaseToken;
+	}
+	
+	public String getFireBaseToken(){
+		return fireBaseToken;
+	}
 }
