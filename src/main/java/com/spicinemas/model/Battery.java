@@ -1,6 +1,7 @@
 package com.spicinemas.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -10,16 +11,12 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Document(collection="Screen")
+@Document(collection="Battery")
 @AllArgsConstructor(access=AccessLevel.PUBLIC)
 @ToString
 @Getter
 @Setter
-public class Screen {	
-	
+public class Battery {
 	private String uid;
-	private String name;
-	
-	ArrayList<ArrayList<Integer>> seat_layout = new ArrayList<ArrayList<Integer>>();
-	
+	private String uname;
 }
