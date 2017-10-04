@@ -1,4 +1,4 @@
-package com.spicinemas.controller;
+package com.charityRun.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
